@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Utilisateur" as User
+actor "Administrateur" as Admin
+
+rectangle "Portfolio Professionnel" {
+  usecase "Consulter profil" as UC1
+  usecase "Télécharger CV" as UC2
+  usecase "Consulter projets/expériences" as UC3
+  usecase "Consulter compétences" as UC4
+  usecase "Envoyer message de contact" as UC5
+
+  usecase "Se connecter à l'admin" as UC6
+  usecase "Gérer projets" as UC7
+  usecase "Gérer compétences" as UC8
+  usecase "Mettre à jour le profil" as UC9
+  usecase "Consulter/Supprimer messages" as UC10
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+
+Admin --> UC6
+Admin --> UC7
+Admin --> UC8
+Admin --> UC9
+Admin --> UC10
+@enduml

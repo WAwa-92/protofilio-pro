@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Administration</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/index.html">Wael Bakkay</a>
+        <nav class="nav">
+          <a href="/index.html">Accueil</a>
+          <a href="/projects.html">Projets</a>
+          <a href="/contact.html">Contact</a>
+          <a class="active" href="/admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1>Administration</h1>
+
+      <div id="login-box" class="card" style="max-width: 460px">
+        <h2>Connexion</h2>
+        <form id="login-form">
+          <div>
+            <label for="admin-email">Email admin</label>
+            <input id="admin-email" type="email" required />
+          </div>
+
+          <div>
+            <label for="admin-password">Mot de passe</label>
+            <input id="admin-password" type="password" required />
+          </div>
+
+          <button class="btn" type="submit">Se connecter</button>
+          <p id="login-status" class="status"></p>
+        </form>
+      </div>
+
+      <div id="admin-app" class="admin-layout" style="display: none">
+        <aside class="admin-panel">
+          <h2>Gestion</h2>
+          <div class="admin-nav">
+            <button data-tab="profile" class="active">Profil</button>
+            <button data-tab="projects">Projets</button>
+            <button data-tab="skills">Compétences</button>
+            <button data-tab="messages">Messages</button>
+            <button id="logout-btn" class="btn danger" type="button">Déconnexion</button>
+          </div>
+        </aside>
+
+        <section class="admin-panel">
+          <div id="tab-profile" class="tab-content"></div>
+          <div id="tab-projects" class="tab-content" style="display: none"></div>
+          <div id="tab-skills" class="tab-content" style="display: none"></div>
+          <div id="tab-messages" class="tab-content" style="display: none"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="/js/admin.js"></script>
+  </body>
+</html>

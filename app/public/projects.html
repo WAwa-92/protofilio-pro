@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Projets</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/index.html">Wael Bakkay</a>
+        <nav class="nav">
+          <a href="/index.html">Accueil</a>
+          <a class="active" href="/projects.html">Projets</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Projets & expériences</h1>
+        <p class="muted">Sélection de réalisations avec contexte, compétences et résultats.</p>
+      </section>
+
+      <section class="section">
+        <div class="actions">
+          <button class="btn secondary" data-filter="all">Tout</button>
+          <button class="btn secondary" data-filter="projet">Projets</button>
+          <button class="btn secondary" data-filter="experience">Expériences</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div id="projects-list" class="grid cards"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 - Portfolio de Wael Bakkay</div>
+    </footer>
+
+    <script src="/js/projects.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Contact</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/index.html">Wael Bakkay</a>
+        <nav class="nav">
+          <a href="/index.html">Accueil</a>
+          <a href="/projects.html">Projets</a>
+          <a class="active" href="/contact.html">Contact</a>
+          <a href="/admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Contact</h1>
+        <p class="muted">Une question, une opportunité de stage ou d'alternance ? Écrivez-moi.</p>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <form id="contact-form">
+            <div>
+              <label for="sender_name">Nom complet</label>
+              <input id="sender_name" name="sender_name" required />
+            </div>
+
+            <div>
+              <label for="sender_email">Email</label>
+              <input id="sender_email" name="sender_email" type="email" required />
+            </div>
+
+            <div>
+              <label for="subject">Sujet</label>
+              <input id="subject" name="subject" required />
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button class="btn" type="submit">Envoyer</button>
+            <p id="contact-status" class="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 - Portfolio de Wael Bakkay</div>
+    </footer>
+
+    <script src="/js/contact.js"></script>
+  </body>
+</html>
