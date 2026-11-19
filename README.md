@@ -19,7 +19,7 @@ Construire un portfolio professionnel administrable, propre et facile à expliqu
 
 ## Lancer le projet
 1. Créer la base PostgreSQL `portfolio_v2`.
-2. Copier [app/server/.env.example](app/server/.env.example) vers `.env` dans [app/server](app/server).
+2. Copier [app/server/.env.example](app/server/.env.example) vers `.env` dans [app/server](app/server) et remplacer `JWT_SECRET` par une chaîne aléatoire d'au moins 32 caractères (le serveur refuse de démarrer sans elle).
 3. Installer les dépendances dans [app/server](app/server) : `npm install`.
 4. Démarrer l'application : `npm run dev`.
 

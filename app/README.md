@@ -24,6 +24,6 @@ Ce dossier contient toute l'application.
 - `POST /api/contact`
 - `POST /api/admin/login`
 - `GET/PUT /api/admin/profile`
-- `GET/POST/PUT/DELETE /api/admin/projects`
+- `GET/POST/PUT/DELETE /api/admin/projects` (corps : `skill_ids` pour lier les compétences)
 - `GET/POST/PUT/DELETE /api/admin/skills`
 - `GET/PATCH/DELETE /api/admin/messages`
