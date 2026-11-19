@@ -30,6 +30,9 @@ Le serveur initialise automatiquement les tables au démarrage.
 - Email : variable `ADMIN_EMAIL`
 - Mot de passe : variable `ADMIN_PASSWORD`
 
+## Formulaire de contact
+Le formulaire enregistre le message en base et ouvre un nouveau message Gmail prérempli vers l'adresse de contact, configurée dans [contact.js](app/public/js/contact.js).
+
 ## Important (consigne noms de fichiers)
 Les livrables demandés utilisent le préfixe **wael_bakkay**.
 
